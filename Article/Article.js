@@ -3,7 +3,7 @@
 class Article {
   constructor(domElement) {
     this.domElement = domElement;
-console.log(domElement)
+// console.log(domElement)
     this.expandButton = domElement.querySelector('.article .expandButton');
     this.expandButton.textContent = 'expand  ';
     this.expandButton.addEventListener('click', this.expandArticle.bind(this));
@@ -18,5 +18,5 @@ console.log(domElement)
 document.querySelectorAll('.article').forEach(newArticle);
 function newArticle(a) {
   new Article(a)
-  console.log(a)
+  // console.log(a)
 }
